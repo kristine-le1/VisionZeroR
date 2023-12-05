@@ -1,6 +1,7 @@
 ## code to prepare `DATASET` dataset goes here
 
 library(dplyr)
+library(tidyr)
 options(timeout = 300)
 
 # Boston Webscraping
@@ -140,3 +141,15 @@ vz_fatal <- rbind(sum_dv, sum_nyc, sum_va, sum_co, sum_bos)
 
 usethis::use_data(vz_fatal, overwrite = TRUE)
 
+# Adding population data
+
+cities_pop <- read.csv("data-raw/cities_pop.csv")
+
+red_cities_pop <- cities_pop|> select(1, 3, 5, 7, 9, 11) |> filter(Fact == "Population Estimates, July 1, 2022, (V2022)") |> pivot_longer(cols = c("Boston.city..Massachusetts", "Richmond.city..Virginia", "Denver.County..Colorado", "Boulder.city..Colorado", "New.York.city..New.York"),
+                                                                                                                                          names_to = "city",
+                                                                                                                                          values_to = "pop_size") |> mutate(Fact = case_when(Fact == "Population Estimates, July 1, 2022, (V2022)" ~ "2022 Population Estimate")
+
+
+df %>% pivot_longer(cols=c('year1', 'year2'),
+                    names_to='year',
+                    values_to='points')
