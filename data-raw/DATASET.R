@@ -168,9 +168,9 @@ red_cities_pop$pop_size <- as.numeric(red_cities_pop$pop_size)
 joined <- left_join(vz_fatal, red_cities_pop, by = join_by(city == city))
 
 # Adding column of fatalities normalized to population size
-vz_data <- joined |> mutate(fatal_perc = (total_fatal/pop_size)*100)
+vz_data_2023 <- joined |> mutate(fatal_perc = (total_fatal/pop_size)*100)
 
-usethis::use_data(vz_data, overwrite = TRUE)
+usethis::use_data(vz_data_2023, overwrite = TRUE)
 
 
 
