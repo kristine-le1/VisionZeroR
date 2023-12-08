@@ -15,7 +15,7 @@
 #' <https://data.cityofnewyork.us/api/views/h9gi-nx95/rows.csv?date=20231129&accessType=DOWNLOAD>
 #' <https://www.denvergov.org/media/gis/DataCatalog/traffic_accidents/csv/traffic_accidents.csv>
 #' <https://opendata.arcgis.com/datasets/4918642e10c84c7fbb8d8590c5b9b216_0.csv>
-#' <https://www.virginiaroads.org/datasets/VDOT::crashdata-details-3.csv
+#' <https://www.virginiaroads.org/datasets/VDOT::crashdata-details-3.csv>
 #' <https://www.census.gov/quickfacts/fact/csv/bostoncitymassachusetts,richmondcityvirginia,denvercountycolorado,bouldercitycolorado,newyorkcitynewyork/PST045222>
 
 "vz_data_2023"
