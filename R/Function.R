@@ -1,3 +1,26 @@
+#' Retrieve data on vehicle fatality percentages per capita in 5 different cities.
+#'
+#' Given a city out of five cities, this function retrieves a graphing object with observations of data on vehicle fatalities throughout the years(from 2008-2023)
+#'
+#' @param character A character vector of the city name from five different choices: Boston, NYC, Boulder, Denver, and Richmond.
+#'
+#' @return a graph looking at the percentage of fatalities per capita across the years 2008-2023.
+#'
+#'
+#' @importFrom dyplr
+#' @importFrom ggplot2
+#' @export
+
+#' Visualize vz_data_2023
+#'
+#' Given a [`city`] object retrieves the data of
+#' each of the five given cities(Boston, Boulder, NYC, Richmond, Denver) from their respective traffic data website, filter each city and summarize their data into their respective years, and displays a line graph of summary statistics of these five cities.
+#'
+#' @param city a [`vz_data2023`] object
+#'
+#' @exportS3Method
+
+
 library(ggplot2)
 
 vz_graph <- function(cities) {
@@ -177,6 +200,3 @@ second
 #
 #   # Example usage of the graphing function
 #  # plot_data(data = my_data, x_variable = x_values, y_variable = y_values, title = "My Custom Plot", x_label = "X-axis Label", y_label = "Y-axis Label")
-
-
-
