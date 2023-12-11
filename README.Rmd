@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # VisionZeroR
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/kristine-le1/VisionZeroR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/kristine-le1/VisionZeroR/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of VisionZeroR package is to consolidate and refine vehicle fatality data from five cities recognized by VisionZero as of Fall 2023 - specifically, Boston, Richmond, Denver, Boulder, and NYC. This package transforms the data into an accessible format for users. Additionally, it includes a feature that allows plotting of vehicle fatality rates, adjusted for population size, for any combination of these five cities. This functionality is particularly useful for analyzing and comparing the effectiveness of these cities in reducing vehicle-related fatalities over time under the VisionZero initiative.

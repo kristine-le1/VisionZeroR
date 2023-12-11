@@ -4,6 +4,8 @@
 # VisionZeroR
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/kristine-le1/VisionZeroR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/kristine-le1/VisionZeroR/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of VisionZeroR package is to consolidate and refine vehicle
@@ -25,8 +27,9 @@ You can install the development version of VisionZeroR from
 #install.packages("devtools")
 devtools::install_github("kristine-le1/VisionZeroR", force = TRUE)
 #> Downloading GitHub repo kristine-le1/VisionZeroR@HEAD
+#> 
 #> ── R CMD build ─────────────────────────────────────────────────────────────────
-#>      checking for file ‘/private/var/folders/jg/rsnmdn7s507fc5tqwvr1pys80000gn/T/RtmpDsSZB6/remotes4ca3ed5e933/kristine-le1-VisionZeroR-701bdff/DESCRIPTION’ ...  ✔  checking for file ‘/private/var/folders/jg/rsnmdn7s507fc5tqwvr1pys80000gn/T/RtmpDsSZB6/remotes4ca3ed5e933/kristine-le1-VisionZeroR-701bdff/DESCRIPTION’
+#>      checking for file ‘/private/var/folders/jg/rsnmdn7s507fc5tqwvr1pys80000gn/T/RtmpIOShUo/remotes51d71265c726/kristine-le1-VisionZeroR-a09e99b/DESCRIPTION’ ...  ✔  checking for file ‘/private/var/folders/jg/rsnmdn7s507fc5tqwvr1pys80000gn/T/RtmpIOShUo/remotes51d71265c726/kristine-le1-VisionZeroR-a09e99b/DESCRIPTION’
 #>   ─  preparing ‘VisionZeroR’:
 #>      checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
 #>   ─  checking for LF line-endings in source and make files and shell scripts
@@ -78,7 +81,6 @@ many vehicular fatalities were there?
 
 ``` r
 library(dplyr)
-#> Warning: package 'dplyr' was built under R version 4.1.2
 #> 
 #> Attaching package: 'dplyr'
 #> The following objects are masked from 'package:stats':
