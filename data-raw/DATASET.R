@@ -140,3 +140,5 @@ vz_fatal <- rbind(sum_dv, sum_nyc, sum_va, sum_co, sum_bos)
 
 usethis::use_data(vz_fatal, overwrite = TRUE)
 
+usethis::use_data(vz_data_2023, overwrite = TRUE)
+
