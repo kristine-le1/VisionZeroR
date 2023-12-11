@@ -58,8 +58,6 @@ library(dplyr)
 
 ```{r}
 
-library(dplyr)
-
 max <- vz_data_2023 |> 
     group_by(city) |> 
     summarise(max_fatalities = max(total_fatal))
@@ -71,6 +69,15 @@ max_2 <- left_join(max, edit_vz, by = c("max_fatalities" = "total_fatal", "city"
 
 ```
 
+```{r}
+
+# Graph vehicular fatality data for just Boston
+vz_graph("Boston")
+
+# Graph vehicular fatality data for Boston, NYC, and Boulder
+vz_graph(c("NYC", "Boston", "Boulder"))
+
+```
 
 
 You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this.

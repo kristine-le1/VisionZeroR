@@ -29,7 +29,7 @@ devtools::install_github("kristine-le1/VisionZeroR", force = TRUE)
 #> Downloading GitHub repo kristine-le1/VisionZeroR@HEAD
 #> 
 #> ── R CMD build ─────────────────────────────────────────────────────────────────
-#>      checking for file ‘/private/var/folders/jg/rsnmdn7s507fc5tqwvr1pys80000gn/T/RtmpIOShUo/remotes51d71265c726/kristine-le1-VisionZeroR-a09e99b/DESCRIPTION’ ...  ✔  checking for file ‘/private/var/folders/jg/rsnmdn7s507fc5tqwvr1pys80000gn/T/RtmpIOShUo/remotes51d71265c726/kristine-le1-VisionZeroR-a09e99b/DESCRIPTION’
+#>      checking for file ‘/private/var/folders/jg/rsnmdn7s507fc5tqwvr1pys80000gn/T/RtmpRAtAnl/remotes531417ad061a/kristine-le1-VisionZeroR-9ce9ee0/DESCRIPTION’ ...  ✔  checking for file ‘/private/var/folders/jg/rsnmdn7s507fc5tqwvr1pys80000gn/T/RtmpRAtAnl/remotes531417ad061a/kristine-le1-VisionZeroR-9ce9ee0/DESCRIPTION’
 #>   ─  preparing ‘VisionZeroR’:
 #>      checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
 #>   ─  checking for LF line-endings in source and make files and shell scripts
@@ -93,8 +93,6 @@ library(dplyr)
 
 ``` r
 
-library(dplyr)
-
 max <- vz_data_2023 |> 
     group_by(city) |> 
     summarise(max_fatalities = max(total_fatal))
@@ -104,6 +102,22 @@ edit_vz <- vz_data_2023 |>
 
 max_2 <- left_join(max, edit_vz, by = c("max_fatalities" = "total_fatal", "city" = "city"))
 ```
+
+``` r
+
+# Graph vehicular fatality data for just Boston
+vz_graph("Boston")
+```
+
+<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
+
+``` r
+
+# Graph vehicular fatality data for Boston, NYC, and Boulder
+vz_graph(c("NYC", "Boston", "Boulder"))
+```
+
+<img src="man/figures/README-unnamed-chunk-6-2.png" width="100%" />
 
 You’ll still need to render `README.Rmd` regularly, to keep `README.md`
 up-to-date. `devtools::build_readme()` is handy for this.
