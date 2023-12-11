@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #' Metadata for vehicle fatalities in Boston, NYC, Denver, Richmond, and Boulder ranging from years 2008-2023.
 #'
 #' @format A data frame with 36 rows and 5 columns:
@@ -17,6 +17,4 @@
 #' https://data.boston.gov/dataset/d326a4e3-75f2-42ac-9b32-e2920566d04c/resource/92f18923-d4ec-4c17-9405-4e0da63e1d6c/download/tmp1u21fr8k.csv,
 #' *** url for populations?>
 "vz_data_2023"
-=======
 
->>>>>>> a71eb650e34cc1ee5f1bb60a0abe39c6e50eb864
