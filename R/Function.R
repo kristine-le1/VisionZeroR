@@ -20,10 +20,8 @@
 #' @importFrom ggplot2 aes
 #' @export
 
-
 vz_graph <- function(cities) {
 
-  # wrangle
   new <- vz_data_2023 |> dplyr::filter(city %in% cities)
 
   # plotting
@@ -39,7 +37,6 @@ vz_graph <- function(cities) {
          y = "Normalized fatalities by percent of population",
          color = "City")
 }
-
 
 
 
