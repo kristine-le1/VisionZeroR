@@ -17,23 +17,24 @@
 #' @importFrom ggplot2 geom_point
 #' @importFrom ggplot2 geom_line
 #' @importFrom ggplot2 labs
+#' @importFrom ggplot2 aes
 #' @export
 
 
 vz_graph <- function(cities) {
 
   # wrangle
-  new <- vz_data_2023 |> filter(city %in% cities)
+  new <- vz_data_2023 |> dplyr::filter(city %in% cities)
 
   # plotting
-  ggplot(data = new,
-         aes(x = year,
+  ggplot2::ggplot(data = new,
+         ggplot2::aes(x = year,
              y = fatal_perc,
              color = city,
              group = city)) +
-    geom_point() +
-    geom_line() +
-    labs(title = "Normalized vehicular fatalities per year for VisionZero cities",
+    ggplot2::geom_point() +
+    ggplot2::geom_line() +
+    ggplot2::labs(title = "Normalized vehicular fatalities per year for VisionZero cities",
          x = "Year",
          y = "Normalized fatalities by percent of population",
          color = "City")
