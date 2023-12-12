@@ -7,7 +7,7 @@
 vz_graph(cities)
 }
 \arguments{
-\item{character}{A character vector of up to 5 elements containing city names from five different VisionZero cities: Boston, NYC, Boulder, Denver, and Richmond.}
+\item{cities}{A character vector of up to 5 elements containing city names from five different VisionZero cities: Boston, NYC, Boulder, Denver, and Richmond.}
 }
 \value{
 A point graph in the \code{plots} window displaying the percentage of vehicular fatalities based on population size across the years 2008-2023 (year range dependent on the available data for the user-given cities).
