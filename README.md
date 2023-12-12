@@ -26,17 +26,6 @@ You can install the development version of VisionZeroR from
 ``` r
 #install.packages("devtools")
 devtools::install_github("kristine-le1/VisionZeroR", force = TRUE)
-#> Downloading GitHub repo kristine-le1/VisionZeroR@HEAD
-#> 
-#> ── R CMD build ─────────────────────────────────────────────────────────────────
-#>      checking for file ‘/private/var/folders/jg/rsnmdn7s507fc5tqwvr1pys80000gn/T/RtmpRAtAnl/remotes531417ad061a/kristine-le1-VisionZeroR-9ce9ee0/DESCRIPTION’ ...  ✔  checking for file ‘/private/var/folders/jg/rsnmdn7s507fc5tqwvr1pys80000gn/T/RtmpRAtAnl/remotes531417ad061a/kristine-le1-VisionZeroR-9ce9ee0/DESCRIPTION’
-#>   ─  preparing ‘VisionZeroR’:
-#>      checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
-#>   ─  checking for LF line-endings in source and make files and shell scripts
-#>   ─  checking for empty or unneeded directories
-#>   ─  building ‘VisionZeroR_0.0.0.9000.tar.gz’
-#>      
-#> 
 ```
 
 ## Example
