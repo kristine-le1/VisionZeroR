@@ -36,16 +36,6 @@ This is a basic example which shows you how to solve a common problem:
 library(VisionZeroR)
 ```
 
-The `VisionZeroR` package is a package that aggregates and cleans up
-vehicular fatality data for 5
-[VisionZero](https://visionzeronetwork.org/about/what-is-vision-zero/)-recognized
-cities that have available data as of Fall 2023 (Boston, Richmond,
-Denver, Boulder, and NYC) into a user-friendly data set. It also
-provides a function to graph the vehicular fatalities normalized to
-population size for 1 to 5 of the cities over the years to see how the
-cities have done with decreasing vehicular fatalities as VisionZero
-cities.
-
 ## VisionZero vehicular fatality data
 
 The vehicular fatality and population data for the VisionZero cities
