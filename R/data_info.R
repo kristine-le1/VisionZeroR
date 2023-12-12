@@ -2,11 +2,11 @@
 #'
 #' @format A data frame with 36 rows and 5 columns:
 #' \describe{
-#'   \item{year}{Year of fatalities}
-#'   \item{total_fatal}{number of documented fatalities resulting from a car crash per year as per each cities respective VisionZero data set. Note that some cities have a specific fatalities data set and other cities had a more general one that needed to be filtered for fatalities}
-#'   \item{city}{City where fatality took place. Note that this is NOT an exhausive list of ALL VisionZero cities involved in the program.}
-#'   \item{pop_size}{Population size for city listed as of 2022}
-#'   \item{fatal_perc}{Proportion of each cities population involved in vehicular fatalities per year calcuated with VisionZero data and Census population data}
+#'   \item{year}{Year that fatalities occured}
+#'   \item{total_fatal}{Number of documented fatalities resulting from a car crash per year as per each cities respective VisionZero data set. Note that some cities have a specific fatalities data set and other cities had a more general one that needed to be filtered for fatalities}
+#'   \item{city}{VisionZero city where the vehicular fatalities took place. Note that this is NOT an exhausive list of ALL VisionZero cities involved in the program.}
+#'   \item{pop_size}{Population size for city as of 2022}
+#'   \item{fatal_perc}{Percent of each citiy's population involved in vehicular fatalities per year calcuated with VisionZero data and Census population data}
 
 #'   ...
 #' }
