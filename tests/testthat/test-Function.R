@@ -1,6 +1,5 @@
 library(ggplot2)
 library(VisionZeroR)
-
 library(vdiffr)
 
   test_that("Graphing test", {

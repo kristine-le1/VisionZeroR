@@ -18,10 +18,10 @@ LazyData: true
 Suggests: 
     knitr,
     rmarkdown,
-    vdiffr,
     testthat (>= 3.0.0)
 VignetteBuilder: knitr
 Imports: 
     dplyr,
-    ggplot2
+    ggplot2,
+    vdiffr
 
