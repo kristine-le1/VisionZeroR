@@ -1,5 +1,5 @@
 test_that("vz_data_2023 row count", {
-  expect_equal(nrow(vz_data_2023), 45)
+  expect_equal(nrow(vz_data_2023), 36)
 })
 test_that("vz_data_2023 column count", {
   expect_equal(ncol(vz_data_2023), 5)
