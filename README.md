@@ -25,7 +25,7 @@ You can install the development version of VisionZeroR from
 
 ``` r
 #install.packages("devtools")
-devtools::install_github("kristine-le1/VisionZeroR", force = TRUE, dependencies = TRUE, build_vignettes = TRUE)
+devtools::install_github("kristine-le1/VisionZeroR", build_vignettes = TRUE, dependencies = TRUE)
 ```
 
 ## Example
