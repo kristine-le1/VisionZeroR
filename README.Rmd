@@ -27,7 +27,7 @@ You can install the development version of VisionZeroR from [GitHub](https://git
 
 ```{r eval=FALSE}
 #install.packages("devtools")
-devtools::install_github("kristine-le1/VisionZeroR", force = TRUE, dependencies = TRUE)
+devtools::install_github("kristine-le1/VisionZeroR", force = TRUE, dependencies = TRUE, build_vignettes = TRUE)
 ```
 
 
@@ -64,6 +64,8 @@ edit_vz <- vz_data_2023 |>
     select(1:3)
 
 max_2 <- left_join(max, edit_vz, by = c("max_fatalities" = "total_fatal", "city" = "city"))
+
+head(max_2)
 
 ```
 
