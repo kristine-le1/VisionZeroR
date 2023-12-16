@@ -25,7 +25,7 @@ You can install the development version of VisionZeroR from
 
 ``` r
 #install.packages("devtools")
-devtools::install_github("kristine-le1/VisionZeroR", force = TRUE)
+devtools::install_github("kristine-le1/VisionZeroR", force = TRUE, dependencies = TRUE, build_vignettes = TRUE)
 ```
 
 ## Example
@@ -34,6 +34,7 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(VisionZeroR)
+library(vdiffr)
 ```
 
 ## VisionZero vehicular fatality data
@@ -80,6 +81,17 @@ edit_vz <- vz_data_2023 |>
     select(1:3)
 
 max_2 <- left_join(max, edit_vz, by = c("max_fatalities" = "total_fatal", "city" = "city"))
+
+head(max_2)
+#> # A tibble: 6 × 3
+#>   city     max_fatalities year 
+#>   <chr>             <int> <chr>
+#> 1 Boston               21 2016 
+#> 2 Boulder               5 2021 
+#> 3 Boulder               5 2023 
+#> 4 Denver                6 2022 
+#> 5 NYC                 297 2013 
+#> 6 Richmond            758 2008
 ```
 
 ``` r
