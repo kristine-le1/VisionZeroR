@@ -172,4 +172,3 @@ vz_data_2023 <- joined |> mutate(fatal_perc = (total_fatal/pop_size)*100)
 
 usethis::use_data(vz_data_2023, overwrite = TRUE)
 
-
