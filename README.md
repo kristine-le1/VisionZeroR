@@ -94,6 +94,13 @@ head(max_2)
 #> 6 Richmond            758 2008
 ```
 
+## VisionZero vehicular fatality data visualization
+
+Given a character vector of up to 5 elements made up of city names from
+the list of Boston, Richmond, NYC, Denver, or Boulder, the `vz_graph`
+function creates a point graph of vehicular fatalities normalized to the
+population size of the city for the user-given cities.
+
 ``` r
 
 # Graph vehicular fatality data for just Boston
